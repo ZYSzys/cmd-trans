@@ -1,0 +1,47 @@
+{
+  "name": "cmd-trans",
+  "version": "1.0.0",
+  "description": "translator in command line",
+  "main": "index.js",
+  "bin": {
+    "trans": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "config.js",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run lint && nyc ava -v",
+    "lint": "prettier --single-quote --write *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ZYSzys/cmd-trans.git"
+  },
+  "keywords": [
+    "translate",
+    "cmd",
+    "terminal",
+    "node"
+  ],
+  "author": "ZYSzys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZYSzys/cmd-trans/issues"
+  },
+  "homepage": "https://github.com/ZYSzys/cmd-trans#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "blueimp-md5": "2.10.0",
+    "chalk": "2.4.1",
+    "qs": "6.5.2"
+  },
+  "devDependencies": {
+    "ava": "0.25.0",
+    "codecov": "3.1.0",
+    "execa": "1.0.0",
+    "nyc": "13.0.1",
+    "prettier": "1.14.3"
+  }
+}
