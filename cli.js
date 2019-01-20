@@ -9,7 +9,7 @@ if (!process.argv[2]) {
   console.log(chalk.cyan('  $ ') + 'trans word');
   console.log(chalk.cyan('  $ ') + 'trans world peace');
   console.log(chalk.cyan('  $ ') + 'trans chinglish');
-  return;
+  process.exit();
 } else {
   const trans = require('.');
   trans(process.argv.slice(2).join(' '));

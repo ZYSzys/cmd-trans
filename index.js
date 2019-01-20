@@ -19,7 +19,7 @@ function print(data) {
     firstLine += chalk.magenta('  [ ' + data.basic.phonetic + ' ]');
   }
 
-  log(firstLine + chalk.gray('  ~  fanyi.youdao.com'));
+  log(`${firstLine}  ${data.translation}  ${chalk.gray('~  fanyi.youdao.com')}`);
 
   // pos & acceptation
   if (data.basic && data.basic.explains) {
